@@ -138,3 +138,17 @@ payload:
   - DOMAIN-SUFFIX,worldsecureemail.com
   - DOMAIN-SUFFIX,worldsecuresystems.com
   - DOMAIN-KEYWORD,adobe
+    # ========== Microsoft Entra/AAD 身份认证【必须直连，不能走代理TLS解密】 ==========
+  - DOMAIN-SUFFIX,login.microsoftonline.com,DIRECT
+  - DOMAIN-SUFFIX,login.windows.net,DIRECT
+  - DOMAIN-SUFFIX,sts.microsoft.com,DIRECT
+  - DOMAIN-SUFFIX,msftauth.net,DIRECT
+  - DOMAIN-SUFFIX,msauth.net,DIRECT
+  # ========== Teams 客户端相关域名 ==========
+  - DOMAIN-SUFFIX,teams.microsoft.com,DIRECT
+  - DOMAIN-SUFFIX,teams.cloud.microsoft,DIRECT
+  - DOMAIN-SUFFIX,skype.com,DIRECT
+  # ========== Office365 配套 ==========
+  - DOMAIN-SUFFIX,office.com,DIRECT
+  - DOMAIN-SUFFIX,office365.com,DIRECT
+  - DOMAIN-SUFFIX,microsoftonline.com,DIRECT
